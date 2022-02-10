@@ -1,7 +1,7 @@
 pub mod config{
     pub struct Config {
-    query: String,
-    filename: String,
+        pub(crate) query: String,
+        pub(crate) filename: String,
     }
     impl Config {
         pub fn new(query_:String,filename_:String) -> Config{
