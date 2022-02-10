@@ -12,6 +12,7 @@ pub mod config{
                 filename
             }
         }
+        #[allow(dead_code)]
         pub fn print(&self){
             println!("{} {}" ,self.query,self.filename);
         }
