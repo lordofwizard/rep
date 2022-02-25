@@ -8,8 +8,8 @@ use read::read_func::read;
 use rep::*;
 
 fn main(){
-    let (query,filename) = input_via_env::input();
-    let config = Config::new(query,filename);
-    let output : String = search(config.query.clone(),&read(&config));
+    let (query,filename,true,true) = input_via_env::input();
+    let config = Config::new(query,filename,true,true);
+    let output : String = search_num_sensitive(config.query.clone(),&read(&config));
     println!("{}",&output);
 }
